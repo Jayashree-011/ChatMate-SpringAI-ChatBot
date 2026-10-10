@@ -66,18 +66,3 @@ It responds with:
 ```
 
 The history is sent from the browser on each request and reset when the user clears or starts a chat. Requests are capped at 100 history turns and 20,000 characters per message.
-
-## Project map
-
-- `chatmate-frontend/src/App.tsx` — responsive chat layout, in-memory conversation history, composer, welcome suggestions, and interaction states.
-- `chatmate-frontend/src/App.css` and `src/index.css` — hand-written dark-theme styling and responsive behavior.
-- `chatmate-frontend/src/services/chatApi.ts` — typed native-Fetch client and user-friendly API errors.
-- `chatmate-frontend/src/types.ts` — frontend API and message contracts.
-- `chatmate-frontend/vite.config.ts` — React setup and local `/api` proxy.
-- `chatmate-backend/src/main/java/com/example/chatmate/controller/ChatController.java` — REST endpoint.
-- `chatmate-backend/src/main/java/com/example/chatmate/service/ChatService.java` — maps request history into Spring AI messages and calls Gemini.
-- `chatmate-backend/src/main/java/com/example/chatmate/dto/` — validated API request, response, and error records.
-- `chatmate-backend/src/main/java/com/example/chatmate/controller/GlobalExceptionHandler.java` — consistent validation and server error responses.
-- `chatmate-backend/src/main/java/com/example/chatmate/config/WebConfig.java` — local-development CORS policy.
-- `chatmate-backend/src/main/resources/application.yml` — server and Gemini model configuration.
-- `chatmate-backend/pom.xml` — Java 21, Spring Boot, Spring AI Google GenAI, and validation dependencies.
