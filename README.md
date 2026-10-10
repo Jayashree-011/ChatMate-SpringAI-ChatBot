@@ -2,6 +2,8 @@
 
 ChatMate is a small full-stack AI chatbot. The React/Vite frontend keeps conversations in browser memory for the current page session and sends prior turns to a Spring Boot API. Starting a new chat keeps earlier conversations available in the sidebar; clearing history removes them. The API uses Spring AI's `ChatClient` with Google Gemini 2.5 Flash; it does not store conversations or expose the Gemini key to the browser.
 
+<img width="1917" height="870" alt="Screenshot 2026-10-10 194540" src="https://github.com/user-attachments/assets/96f3927d-c6e7-42c7-9c1e-dc4130436320" />
+
 ## Prerequisites
 
 - Java 21
