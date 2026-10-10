@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: chatmate-backend
+  ai:
+    google:
+      genai:
+        api-key: ${GEMINI_API_KEY}
+        chat:
+          options:
+            model: gemini-2.5-flash
+
+server:
+  port: 8080
+
+chatmate:
+  cors:
+    allowed-origin: ${FRONTEND_ORIGIN:http://localhost:5173}
